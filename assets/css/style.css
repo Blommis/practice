@@ -1,0 +1,62 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+button {
+    width: 150px; /* Samma bredd för alla knappar */
+    height: 40px; /* Samma höjd för alla knappar */
+    padding: 5px 10px; /* Justerar inre avstånd */
+    text-align: center; /* Säkerställer att texten är centrerad */
+    white-space: nowrap; /* Förhindrar att texten bryts */
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+.game-container {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.card {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.flipped {
+    background-color: #ecf0f1;
+    color: black;
+}
+.card i {
+    display: none;
+}
+.flipped i {
+    display: block;
+}
+#intro {
+    margin-top: 50px;
+}
+button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    
+}

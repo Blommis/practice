@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Practice site</title>
+</head>
+<body>
+<h1>Heading</h1>
+<p>paragraph</p>
+<button onclick ="clickOnMe()" id="firstbutton" >Click on me</button>
+<button>Cancel</button>
+
+<!-- Introduktion -->
+<div id="intro">
+    <h1>Välkommen till Memory!</h1>
+    <p>Skriv in ditt namn för att börja spela:</p>
+    <input type="text" id="playerName" placeholder="Ditt namn">
+    <button onclick="startGame()">Starta spelet</button>
+</div>
+
+<!-- Spelområdet (gömt från början) -->
+<div id="game" class="hidden">
+    <h2 id="greeting"></h2>
+    <div class="game-container" id="game-board"></div>
+</div>
+
+
+<script src="assets/javascript/script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://kit.fontawesome.com/e0a995d092.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
