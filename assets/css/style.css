@@ -26,6 +26,7 @@ button {
     margin-top: 20px;
 }
 .card {
+    
     width: 100px;
     height: 100px;
     background-color: #3498db;
@@ -58,5 +59,13 @@ button {
 }
 
 @media screen and (max-width: 768px){
+    .game-container {
+        display: grid;
+        grid-template-columns: repeat(2, 100px);
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+        
+    }
     
 }
